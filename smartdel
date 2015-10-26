@@ -1,0 +1,53 @@
+#!/bin/bash
+
+#echo " dollar sign 1 is:  "$1  "  dollar sign 2 is  "$2
+#This project is by Qi Fen Chen and Andrew Dimotta
+num=1
+
+b="$PWD";
+
+
+
+
+if [ ! -d ~/smartdel_recycle ]; then
+	#cd ~/smartdel_recycle
+	mkdir ~/smartdel_recycle
+	cd $b
+fi
+
+
+if [ $1 = "-d" ] 
+then
+	cd $b
+	while [ "$2" != "" ]; do 
+    		#echo "dollar sign $num: "$2
+		mv $2 ~/smartdel_recycle/
+		#num=`expr $num + 1`
+		shift
+	done
+
+elif [ $1 = "-r" ]
+then
+	cd ~/smartdel_recycle
+	while [ "$2" != "" ]; do
+		#echo "Dollar sign $num: " $2
+		mv $2 $b
+		#num=`expr $num + 1`
+		shift
+	done
+	cd $b
+
+elif [ $1 = "-o" ]
+then
+	echo "This should put the file into the orginal location by using array"
+else
+
+	while [ "$1" != "" ]; do 
+    		#echo "dollar sign $num: "$1
+		mv $1 ~/smartdel_recycle/
+		num=`expr $num + 1`
+		shift
+	done
+	cd $b
+
+fi
