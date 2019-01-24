@@ -1,0 +1,12 @@
+mkdir dir1
+echo "making a directory called dir1"
+sleep 5
+cd dir1
+touch file1 file2 file3
+echo
+ls -asl
+ping -c 8 google.com
+echo
+mkdir dir2
+cp *.txt /dir2
+tar -cvf mytar.tar dir2
