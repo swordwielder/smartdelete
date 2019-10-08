@@ -5,6 +5,7 @@ This is a shell script that allows you to delete a file and move it to a temp fo
 # Commands
 
 * To delete a file type
+
 ```smartdel -d "File Name"```
 or
 ```smartdel "File Name"```
@@ -15,4 +16,4 @@ or
 
 ## Author
 
-* Qi Chen
+* [Qi Chen](https://www.linkedin.com/in/qifchen) - [swordwielder](https://github.com/swordwielder)
