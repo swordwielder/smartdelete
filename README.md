@@ -1,4 +1,18 @@
-# smartdelete
-# This is a project for Linux class in University of Memphis, this executable file allows you to delete a file at a temp
-# folder and later allows you to retrieve them, you may delete them by typing smartdel or smartdel -d "file name "and restore them
-# by typing smartdel -r "file name".
+# Introduction
+
+This is a shell script that allows you to delete a file and move it to a temp folder at the home directory.
+
+# Commands
+
+* To delete a file type
+```smartdel -d "File Name"```
+or
+```smartdel "File Name"```
+
+* To recover a deleted file, type
+
+```smartdel -r "File name"```
+
+## Author
+
+* Qi Chen
