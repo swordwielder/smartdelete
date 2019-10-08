@@ -2,7 +2,7 @@
 
 This is a shell script that allows you to delete a file and move it to a temp folder at the home directory.
 
-# Commands
+## Commands
 
 * To delete a file type
 
